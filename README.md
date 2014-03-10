@@ -28,6 +28,8 @@ In order to run those demos it's required:
   - Digital RGB Led Strip
   - External power supply for the led strip (If the ledstrip is long)
 
+[Wiring diagram](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/wiring_diagram.png)
+
 
 ### Software Requirements
 
@@ -36,17 +38,25 @@ It is required:
   - Muzzley account
   - NodeJs
   - Npm and its dependencies
+  - Git
+
+
+### Documentation
+
+[Muzzley Galileo Manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/manual.pdf)
 
 
 ### Image File
-//TODO
+
 
 
 
 ### Screenshots
 
-[Galileo pin debugger](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/Screenshots/debugger_preview.png)
-[Galileo led strip](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/Screenshots/ledstrip_preview.png)
+[Galileo pin debugger](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/debugger_preview.png)
+
+
+[Galileo led strip](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/ledstrip_preview.png)
 
 
 
