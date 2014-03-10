@@ -1,0 +1,23 @@
+{
+  "name": "intel-galileo-demos",
+  "version": "1.4.1",
+  "keywords": [
+    "SPI",
+    "LED",
+    "RGB",
+    "ledstrip",
+    "ledstripe",
+    "Strip",
+    "LPD8806",
+    "Galileo",
+    "Intel",
+    "Muzzley",
+    "control"
+  ],
+  "dependencies": {
+    "muzzley-client": "*",
+    "async": "*",
+    "LPD8806": "git+ssh://github.com/v0od0oChild/LPD8806-node.git",
+    "color": "*"
+  }
+}
