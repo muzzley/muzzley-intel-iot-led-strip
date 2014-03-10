@@ -14,10 +14,8 @@ Two demos are available:
     By default the galileo pins 4, 5, 6, 7, 8, 9 and the on-board LED were made available (GPIOs 28, 17, 24, 27, 26, 19, 3).
     Clicking on a pin will show you a popup which will allow you to do such operations. You can try for instance connecting a LED to a specific pin and use the mobile device to turn it on and off setting the direction to out and switching between values 0 and 1.
 
-
   - Digital RGB Ledstrip Control
     This one allows the user to control a LED strip. You can fill it with colors or play some colorful animations. Picking the color, selecting an effect or adjusting brightness will trigger the animation with the selected parameters. The color palette is available on clicking the custom color button, you can try slowly dragging your finger in the color palette and watch the LED strip changing colors in real time.
-
 
 
 ### Hardware Requirements
@@ -43,11 +41,20 @@ It is required:
 
 ### Documentation
 
+Download the Installation/usage guide here:
+
 [Muzzley Galileo Manual](https://github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/manual.pdf?raw=true)
 
 
 ### Image File
 
+If you prefer you can download our ready to run image. This image contains linux with the essencials to run the demos.
+
+
+Download demo image
+
+
+See the documentation for the installation/usage guide.
 
 
 
@@ -59,7 +66,3 @@ Mobile views
 
 
 [Galileo led strip](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/ledstrip_preview.png)
-
-
-
-
