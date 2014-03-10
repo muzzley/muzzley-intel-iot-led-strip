@@ -1,0 +1,108 @@
+<link href="http://cdn.muzzley.com/widgets/dbdfc716-b8a9-44ed-b954-4cb1e684e874/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" media="screen" type="text/css" href="http://cdn.muzzley.com/widgets/6e03a26a-db64-40a0-83da-321972165eb1/jquery.minicolors.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://cdn.muzzley.com/widgets/989d0ae8-c5c2-4a20-9b7c-a1e25ea540f8/fonts/fontello/css/intel_icons.css">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="http://cdn.muzzley.com/widgets/989d0ae8-c5c2-4a20-9b7c-a1e25ea540f8/bootstrap/custom-theme/jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdn.muzzley.com/widgets/dbdfc716-b8a9-44ed-b954-4cb1e684e874/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.muzzley.com/widgets/6e03a26a-db64-40a0-83da-321972165eb1/jquery.minicolors.js"></script>
+
+
+<!-- Webview container   -->
+<div id="content" class="container">
+    <div class="row-fluid" id="topbar">
+        <div class="col-xs-6" style="text-align:left;"><img src="http://cdn.muzzley.com/widgets/dbdfc716-b8a9-44ed-b954-4cb1e684e874/logo-intel.png" style="max-width: 80px;" /></div>
+        <div class="col-xs-6" style="text-align:right;"><img style="max-width: 100px;" src="http://cdn.muzzley.com/widgets/dbdfc716-b8a9-44ed-b954-4cb1e684e874/logo-muzzley.png" /></div>
+    </div>
+    <div class="row-fluid" id="menus">
+        <div class="col-xs-6" id="pin-map-btn">PIN MAP</div>
+        <div class="col-xs-6" id="led-stripe-btn">LED STRIP</div>
+    </div>
+    <!--Muzzley view with top margin for logo spacing-->
+    <div id="pin-map-view" class="row-fluid" style="display:none">
+        <div id="galileo-img">
+            <div id="inside-box">
+                <div class="row-fluid" id="pin-name">Pin 1</div>
+                <div class="row-fluid" id="pin-value">Value: <input id="input-value" type="text"></input></div>
+                <div class="row-fluid" id="pin-direction">Direction: 
+                    IN <input type="radio" id="input-on" class="input" name="input"></input>
+                    OUT <input type="radio" id="input-out" class="input" name="input"></input>
+                </div>
+                <button id="send-btn" class="btn btn-primary btn-xs">Send</button>
+            </div>
+        </div>
+        <!-- Digital pins -->
+        <div class="pins-block row-fluid">
+            <div class="pin-button" id="pin-4" data-target-pin="4"><p class="name"><b>4</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-5" data-target-pin="5"><p class="name"><b>5</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-6" data-target-pin="6"><p class="name"><b>6</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-7" data-target-pin="7"><p class="name"><b>7</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-8" data-target-pin="8"><p class="name"><b>8</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-9" data-target-pin="9"><p class="name"><b>9</b></p><p class="value">0</p></div>
+            <div class="pin-button" id="pin-led" data-target-pin="led"><p class="name"><b>Led</b></p><p class="value">0</p></div>
+        </div> 
+    </div>
+    <div id="led-stripe-view" style="display:none">
+        <div class="container-screen" id="light-color">
+            <!-- Single button -->
+            <div class="row-fluid title">EFFECTS
+                <div class="btn-group" style="margin-left:20px">
+                  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <span id="dropdown-select" >Fill Color</span> <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li style="margin-left:10px" data-target-effect="fill">Fill Color</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="flash">Flash Color</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="knight-rider">Knight Rider</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="fade">Fade Color</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="rainbow">Rainbow</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="muzzleyintel">Muzzley Intel</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="joineffect">Join</li>
+                    <li class="divider"></li>
+                    <li style="margin-left:10px" data-target-effect="ledsoff">Leds Off</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row-fluid title" id="custom-title">CUSTOM COLOR</div><div id="wheel-demo" class="demo" data-control="wheel"></div>
+            <div class="row-fluid title" id="palete-title">PALETTE COLOR</div>
+            <div class="light-screen">
+                <div class="row-fluid" id="color-container" >
+                    <div style="margin-left:auto; margin-right:auto">
+                        <div class="row-fluid" style="padding:0">
+                            <div id="1" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#66ccff"></div></div>
+                            <div id="2" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#3366cc"></div></div>
+                            <div id="3" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#33cc66"></div></div>
+                        </div>
+                        <div class="row-fluid" style="padding:0">
+                            <div id="4" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#92f85f"></div></div> 
+                            <div id="5" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#fcfa4d"></div></div> 
+                            <div id="6" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#ff9933"></div></div> 
+                        </div>
+                        <div class="row-fluid" style="padding:0">
+                            <div id="7" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#ff3333"></div></div>
+                            <div id="8" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#ff99ff"></div></div>
+                            <div id="9" class="col-xs-4 colorpoint"><div class="lightcolor" id="lightcolor" style="background-color:#9e66ff"></div></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!--<div class="row-fluid title" id="custom-title">CUSTOM COLOR</div><div id="wheel-demo" class="demo" data-control="wheel"></div>-->
+            <div class="row-fluid title" id="brightness-title">BRIGHTNESS</div>
+            <div class="row-fluid slider-container" id="brightness-slider">
+                <span class="icon-light-down" style="font-size:23px; float:left"></span>
+                <div id="v-slider1" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"></div>
+                <span class="icon-light-down" style="font-size:25px; float:left"></span>
+            </div>
+        </div>
+
+        <!--<div class="row-fluid" style="text-align:center"><button id="send-color-btn" type="button" class="btn btn-primary">Send</button></div>-->
+    </div>
+</div>
