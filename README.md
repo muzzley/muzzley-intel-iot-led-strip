@@ -28,7 +28,7 @@ In order to run those demos it's required:
   - Digital RGB Led Strip
   - External power supply for the led strip (If the ledstrip is long)
 
-[Wiring diagram](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/wiring_diagram.png)
+[Wiring diagram](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/wiring_diagram.png)
 
 
 ### Software Requirements
