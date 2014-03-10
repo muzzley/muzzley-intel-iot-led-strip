@@ -43,7 +43,7 @@ It is required:
 
 ### Documentation
 
-[Muzzley Galileo Manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/manual.pdf)
+[Muzzley Galileo Manual](https://github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/manual.pdf?raw=true)
 
 
 ### Image File
@@ -52,6 +52,8 @@ It is required:
 
 
 ### Screenshots
+
+Mobile views
 
 [Galileo pin debugger](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/debugger_preview.png)
 
