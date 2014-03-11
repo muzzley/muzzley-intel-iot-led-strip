@@ -1,9 +1,11 @@
 Intel Galileo Muzzley Demos
 ========================
 
-Control a led strip with your mobile device using an [Intel Galileo Board](http://arduino.cc/en/ArduinoCertified/IntelGalileo)
+Control a led strip with your mobile device (iOS and Android) using an [Intel Galileo Board](http://arduino.cc/en/ArduinoCertified/IntelGalileo)
 
 This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo signaling and mobile views development.
+
+[Demo Video](https://www.youtube.com/watch?v=Qoxn3yODUCI)
 
 
 ### About the demos
@@ -50,9 +52,7 @@ Download the Installation/usage guide here:
 
 If you prefer you can download our ready to run image. This image contains linux with the essencials to run the demos.
 
-
-Download demo image
-
+Download the demo image file
 
 See the documentation for the installation/usage guide.
 
