@@ -61,6 +61,11 @@ See the documentation for the installation/usage guide.
 
 ### Screenshots
 
+Video
+
+[Running the demo](https://www.youtube.com/watch?v=Qoxn3yODUCI)
+
+
 Mobile views
 
 [Galileo pin debugger](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/debugger_preview.png)
