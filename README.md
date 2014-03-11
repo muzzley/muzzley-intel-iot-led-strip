@@ -5,7 +5,7 @@ Control a led strip with your mobile device (iOS and Android) using an [Intel Ga
 
 This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo signaling and mobile views development.
 
-[Demo Video](https://www.youtube.com/watch?v=Qoxn3yODUCI)
+[![Demo preview](http://img.youtube.com/vi/Qoxn3yODUCI/0.jpg)](https://www.youtube.com/watch?v=Qoxn3yODUCI)
 
 
 ### About the demos
@@ -48,11 +48,12 @@ Download the Installation/usage guide here:
 [Muzzley Galileo Manual](https://github.com/v0od0oChild/MuzzleyGalileoDemos/blob/master/docs/manual.pdf?raw=true)
 
 
+
 ### Image File
 
 If you prefer you can download our ready to run image. This image contains linux with the essencials to run the demos.
 
-Download the demo image file
+[Download the demo image file](https://cdn.muzzley.com/intel/muzzley_galileo_1.4.1.gz)
 
 See the documentation for the installation/usage guide.
 
@@ -63,6 +64,5 @@ See the documentation for the installation/usage guide.
 Mobile views
 
 [Galileo pin debugger](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/debugger_preview.png)
-
 
 [Galileo led strip](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/ledstrip_preview.png)
