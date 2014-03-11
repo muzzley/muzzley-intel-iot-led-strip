@@ -56,6 +56,9 @@ If you prefer you can download our ready to run image. This image contains linux
 
 [Download the demo image file](https://cdn.muzzley.com/intel/muzzley_galileo_1.4.1.gz)
 
+MD5 Sum
+31ddbd53dfd214ed2722fb5b6e8e0cb6  muzzley_galileo_1.4.1.gz
+
 See the documentation for the installation/usage guide.
 
 
