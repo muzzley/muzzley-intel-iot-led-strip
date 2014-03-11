@@ -7,6 +7,7 @@ This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo sign
 
 [![Demo preview](http://img.youtube.com/vi/Qoxn3yODUCI/0.jpg)](https://www.youtube.com/watch?v=Qoxn3yODUCI)
 
+[https://www.youtube.com/watch?v=Qoxn3yODUCI](https://www.youtube.com/watch?v=Qoxn3yODUCI)
 
 ### About the demos
 
@@ -36,7 +37,7 @@ In order to run those demos it's required:
 It is required:
   - Linux image in the SD card
   - Muzzley account
-  - NodeJs
+  - Node.js
   - Npm and its dependencies
   - Git
 
@@ -60,11 +61,6 @@ See the documentation for the installation/usage guide.
 
 
 ### Screenshots
-
-Video
-
-[Running the demo](https://www.youtube.com/watch?v=Qoxn3yODUCI)
-
 
 Mobile views
 
