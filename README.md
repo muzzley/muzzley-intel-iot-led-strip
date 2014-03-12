@@ -44,7 +44,7 @@ It is required:
 
 Download the Installation/usage guide here:
 
-[Download the project manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/manual.pdf)
+[Project manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/manual.pdf)
 
 
 ### Image File
@@ -64,4 +64,4 @@ See the documentation for the installation/usage guide.
 
 [Ledstrip view](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/ledstrip_control.png)
 
-[Download the demo image file](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/pin_debugger.png)
+[Pin debugger view](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/Screenshots/pin_debugger.png)
