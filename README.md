@@ -13,11 +13,18 @@ Two demos are available:
   - Galileo Pin Debugger
     This demo allows the user to read and write to the galileo board pins. Allowed values are 0 and 1 and the allowed directions are In and Out. Beware that you can only change a value if the direction is set to Out.
     By default the galileo pins 4, 5, 6, 7, 8, 9 and the on-board LED were made available (GPIOs 28, 17, 24, 27, 26, 19, 3).
-    Clicking on a pin will show you a popup which will allow you to do such operations. You can try for instance connecting a LED to a specific pin and use the mobile device to turn it on and off setting the direction to out and switching between values 0 and 1.
+    Clicking on a pin will show you a popup which will allow you to do such operations. You can try for instance connecting a LED to a specific pin and use the mobile device to turn it on and off setting the direction to out and switching between values 0 and 1
+
+[![Demo preview](http://img.youtube.com/vi/4SaiS1zZIA0/0.jpg)](http://www.youtube.com/watch?v=4SaiS1zZIA0)
+
+[http://www.youtube.com/watch?v=4SaiS1zZIA0](http://www.youtube.com/watch?v=4SaiS1zZIA0)
 
   - Digital RGB Ledstrip Control
     This one allows the user to control a LED strip. You can fill it with colors or play some colorful animations. Picking the color, selecting an effect or adjusting brightness will trigger the animation with the selected parameters. The color palette is available on clicking the custom color button, you can try slowly dragging your finger in the color palette and watch the LED strip changing colors in real time.
 
+[![Demo preview](http://img.youtube.com/vi/O7mNqinRV5s/0.jpg)](http://www.youtube.com/watch?v=O7mNqinRV5s)
+
+[http://www.youtube.com/watch?v=O7mNqinRV5s](http://www.youtube.com/watch?v=O7mNqinRV5s)
 
 ### Hardware Requirements
 
