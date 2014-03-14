@@ -22,9 +22,9 @@ $(document).ready(function() {
     var newWidth = windowWidth/1.2;
     var newHeight = 0;
     if(newWidth > 220){
-        newWidth = windowWidth/1.2; newHeight = (newWidth*268)/378;
+        newWidth = windowWidth/1.2; newHeight = (newWidth*247)/378;
     }else{
-        newWidth = 220; newHeight = (newWidth*268)/378;
+        newWidth = 220; newHeight = (newWidth*247)/378;
     }
     
     $("#galileo-img").width(newWidth);
@@ -44,44 +44,44 @@ $(document).ready(function() {
         change: function(){
            if(effect !== "fade" && effect !== "flash" && effect !== "ledsoff"){
                 msgTimeout = msgTimeout || setTimeout(function(){
-            	    clearTimeout(msgTimeout);
-            	    msgTimeout = null;
-        	        brightness = $("#v-slider1").slider("value");
+                    clearTimeout(msgTimeout);
+                    msgTimeout = null;
+                    brightness = $("#v-slider1").slider("value");
                     brightness = brightness/100;
-        	        console.log(brightness);
+                    console.log(brightness);
                     if(effect === "fill"){
                         sendColorValues();
                     }else{
                         console.log("send brightness "+brightness);
                         muzzley.send("setBrightness", {brightness:brightness});
                     }
-            	}, 50);
+                }, 50);
             }
         }
     });
     
     $('.demo').each( function() {
-		$(this).minicolors({
-			control: $(this).attr('data-control') || 'hue',
-			defaultValue: $(this).attr('data-defaultValue') || '',
-			inline: $(this).attr('data-inline') === 'true',
-			letterCase: $(this).attr('data-letterCase') || 'lowercase',
-			position: $(this).attr('data-position') || 'bottom left',
-			change: function(hex, opacity) {
-				if( !hex ) return;
-				try {
-				    oldRgbValue = rgbValue;
-				    rgbValue = hexToRgb(hex);
-				    colorPicker();
-				} catch(e) {}
-			},
-			theme: 'bootstrap',
-			changeDelay: delay,
-			show: function(){ 
-			    console.log("show");
-			    firstTime = true;
-			}
-		});
+        $(this).minicolors({
+            control: $(this).attr('data-control') || 'hue',
+            defaultValue: $(this).attr('data-defaultValue') || '',
+            inline: $(this).attr('data-inline') === 'true',
+            letterCase: $(this).attr('data-letterCase') || 'lowercase',
+            position: $(this).attr('data-position') || 'bottom left',
+            change: function(hex, opacity) {
+                if( !hex ) return;
+                try {
+                    oldRgbValue = rgbValue;
+                    rgbValue = hexToRgb(hex);
+                    colorPicker();
+                } catch(e) {}
+            },
+            theme: 'bootstrap',
+            changeDelay: delay,
+            show: function(){ 
+                console.log("show");
+                firstTime = true;
+            }
+        });
         
     });
 
@@ -99,8 +99,8 @@ $("#send-color-btn").on("click", function(){
     $("#send-color-btn").css({"background-color": "#00AEEF", "border": "solid 2px #00AEEF"});
     firstTime = true;
     setTimeout(function(){
-		$("#send-color-btn").css({"background-color": "#333333", "border": "solid 2px #333333"});
-	}, 1000);
+        $("#send-color-btn").css({"background-color": "#333333", "border": "solid 2px #333333"});
+    }, 1000);
     sendColorValues();
 });
 
