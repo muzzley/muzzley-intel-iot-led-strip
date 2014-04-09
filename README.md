@@ -74,6 +74,7 @@ In order to use it you just need to type "wget http://cdn.muzzley.com/intel/Muzz
 " in the galileo shell.
 
 Edit the config.js file, check how to configure it in the manual.
+To start the app type "node galileo.js"
 
 
 ### Screenshots
