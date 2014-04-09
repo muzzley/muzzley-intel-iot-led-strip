@@ -5,7 +5,7 @@ Control a led strip with your mobile device (iOS and Android) using an [Intel® 
 
 This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo signaling and mobile views development.
 
-
+To try the demo you can git clone this repository, download the full ready to run image or download the ready to run app package (links at the botttom of the page)
 
 ### About the demos
 
@@ -67,6 +67,13 @@ MD5 Sum
 
 See the documentation for the installation/usage guide.
 
+
+If you wish to try this demos in the [IoT Devkit](http://software.intel.com/en-us/iotdevkit) or other image, a ready to run app with all the dependencies is availble for download [here](http://cdn.muzzley.com/intel/MuzzleyGalileoDemos_Devkit1.0.tar.gz)
+
+In order to use it you just need to type "wget http://cdn.muzzley.com/intel/MuzzleyGalileoDemos_Devkit1.0.tar.gz -O -| tar -zxvf -
+" in the galileo shell.
+
+Edit the config.js file, check how to configure it in the manual.
 
 
 ### Screenshots
