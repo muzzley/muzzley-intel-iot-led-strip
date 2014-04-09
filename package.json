@@ -17,7 +17,7 @@
   "dependencies": {
     "muzzley-client": "*",
     "async": "*",
-    "LPD8806": "git+ssh://github.com/v0od0oChild/LPD8806-node.git",
+    "LPD8806": "git+https://github.com/v0od0oChild/LPD8806-node.git",
     "color": "*"
   }
 }
