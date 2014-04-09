@@ -4,12 +4,18 @@ var muzzley = require("muzzley-client");
 var config = require("./config");
 var gpios = require("./lib/gpios");
 var ledStripe = require("./lib/ledStripe");
+var exec=require('child_process').exec;
+
 
 var participants = {};
 
 gpios.exportAll(function(){
-  startMuzzley();
+  exec('./gpio_setup',function(err,stdout,stderr){
+    console.log(stdout);
+    startMuzzley();
+  });
 });
+
 
 function startMuzzley(){
   console.log("[info]", "Starting Muzzley");
