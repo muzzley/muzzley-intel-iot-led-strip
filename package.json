@@ -14,10 +14,14 @@
     "Muzzley",
     "control"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/v0od0ochild/MuzzleyGalileoDemos.git"
+  },
   "dependencies": {
     "muzzley-client": "*",
     "async": "*",
-    "LPD8806": "git+https://github.com/v0od0oChild/LPD8806-node.git",
+    "lpd8806-async": "*",
     "color": "*"
   }
 }

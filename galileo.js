@@ -10,7 +10,7 @@ var exec=require('child_process').exec;
 var participants = {};
 
 gpios.exportAll(function(){
-  exec('./gpio_setup',function(err,stdout,stderr){
+  exec(config.board,function(err,stdout,stderr){
     console.log(stdout);
     startMuzzley();
   });
