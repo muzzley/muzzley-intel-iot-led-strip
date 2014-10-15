@@ -1,1 +1,30 @@
+#!/bin/bash -e
 
+#pin10
+export gpio26
+export gpio74
+#echo "out" > /sys/class/gpio/gpio26/direction
+#echo "0" > /sys/class/gpio/gpio26/value
+#echo "0" > /sys/class/gpio/gpio74/value
+
+#pin11
+export gpio24
+export gpio44
+export gpio72
+#echo "out" > /sys/class/gpio/gpio24/direction
+#echo "0" > /sys/class/gpio/gpio24/value
+echo "out" > /sys/class/gpio/gpio44/direction
+echo "1" > /sys/class/gpio/gpio44/value
+echo "0" > /sys/class/gpio/gpio72/value
+
+#pin12
+export gpio42
+echo "0" > /sys/class/gpio/gpio42/value
+
+#pin13
+export gpio30
+export gpio46
+echo "0" > /sys/class/gpio/gpio30/value
+echo "out" > /sys/class/gpio/gpio46/direction
+echo "1" > /sys/class/gpio/gpio46/value
+echo "done..."

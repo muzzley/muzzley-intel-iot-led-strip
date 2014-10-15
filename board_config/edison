@@ -1,0 +1,43 @@
+#!/bin/sh
+
+echo 111 > /sys/class/gpio/export
+echo 115 > /sys/class/gpio/export
+echo 114 > /sys/class/gpio/export
+echo 109 > /sys/class/gpio/export
+echo 263 > /sys/class/gpio/export
+echo 240 > /sys/class/gpio/export
+echo 262 > /sys/class/gpio/export
+echo 241 > /sys/class/gpio/export
+echo 242 > /sys/class/gpio/export
+echo 243 > /sys/class/gpio/export
+echo 258 > /sys/class/gpio/export
+echo 259 > /sys/class/gpio/export
+echo 260 > /sys/class/gpio/export
+echo 261 > /sys/class/gpio/export
+echo 226 > /sys/class/gpio/export
+echo 227 > /sys/class/gpio/export
+echo 228 > /sys/class/gpio/export
+echo 229 > /sys/class/gpio/export
+echo 214 > /sys/class/gpio/export
+echo "Pins exported.."
+echo "low" > /sys/class/gpio/gpio214/direction
+echo "high" > /sys/class/gpio/gpio263/direction
+echo "high" > /sys/class/gpio/gpio240/direction
+echo "high" > /sys/class/gpio/gpio262/direction
+echo "high" > /sys/class/gpio/gpio241/direction
+echo "high" > /sys/class/gpio/gpio242/direction
+echo "high" > /sys/class/gpio/gpio243/direction
+echo "high" > /sys/class/gpio/gpio258/direction
+echo "high" > /sys/class/gpio/gpio259/direction
+echo "low" > /sys/class/gpio/gpio260/direction
+echo "high" > /sys/class/gpio/gpio261/direction
+echo "in" > /sys/class/gpio/gpio226/direction
+echo "in" > /sys/class/gpio/gpio227/direction
+echo "in" > /sys/class/gpio/gpio228/direction
+echo "in" > /sys/class/gpio/gpio229/direction
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
+echo "high" > /sys/class/gpio/gpio214/direction
+echo "done.."
