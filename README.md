@@ -1,6 +1,24 @@
 Intel® Galileo Muzzley Demos
 ========================
 
+### Latest updates
+
+The ledstrip demo is now supported on the following boards:
+  - Intel® Galileo
+  - Intel® Galileo Gen2
+  - Intel® Edison
+
+
+To run:
+  - Git clone this project
+  - Run `npm install` in the project folder
+  - Edit `config.js` file, select the board, insert your Muzzley app key
+  - Run `node index.js` to start
+  - Scan the qrcode or enter the activity id that appears in the console using your Muzzley phone/tablet app
+
+
+### Project description
+
 Control a led strip with your mobile device (iOS and Android) using an [Intel® Galileo Board](http://arduino.cc/en/ArduinoCertified/IntelGalileo)
 
 This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo signaling and mobile views development.

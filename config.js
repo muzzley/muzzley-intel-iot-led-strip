@@ -1,19 +1,18 @@
 var boards = require('./boards.js');
 
 module.exports = {
-  board: boards.GALILEO_GEN2,
+  board: boards.EDISON,  // Available boards: boards.GALILEO, boards.GALILEO_GEN2, boards.EDISON
   muzzley: {
-    token: ""
+    token: '' // Get it on www.muzzley.com, create an account, then create app to get an app token
   },
 
   widgets:{
     // Feel free to use this interface
-    wmcInterface: "f0705f5a-2c06-4bdc-8bf1-5b69365188b6"
+    wmcInterface: 'f0705f5a-2c06-4bdc-8bf1-5b69365188b6'
   },
 
   ledStripe: {
-    ledsNum: 30,
-    spiDevice: '/dev/spidev1.0'
+    ledsNum: 30
   },
 
   //Pins 4, 5, 6, 7, 8, 9 for Galileo

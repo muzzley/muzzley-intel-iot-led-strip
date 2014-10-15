@@ -1,21 +1,22 @@
 console.log("------- MUZZLEY INTEL GALILEO DEMOS -------------");
 
-var muzzley = require("muzzley-client");
-var config = require("./config");
-var gpios = require("./lib/gpios");
-var ledStripe = require("./lib/ledStripe");
+var muzzley = require('muzzley-client');
+var config = require('./config');
+var gpios = require('./lib/gpios');
+var ledStripe = require('./lib/ledStripe');
 var exec=require('child_process').exec;
-
+var qrcode = require('qrcode-terminal');
 
 var participants = {};
 
 gpios.exportAll(function(){
-  exec(config.board,function(err,stdout,stderr){
+  exec(config.board.setup, function(err,stdout,stderr){
+    console.log(err);
     console.log(stdout);
+    console.log(stderr);
     startMuzzley();
   });
 });
-
 
 function startMuzzley(){
   console.log("[info]", "Starting Muzzley");
@@ -37,7 +38,7 @@ function startMuzzley(){
 
     if(activity.activityId.length > 0) clearTimeout(muzzleyTimer);
     if(!activity.activityId) return;
-
+    qrcode.generate('http://www.muzzley.com/play/' + activity.activityId);
     console.log("[info]", "Connected. activityId:", activity.activityId);
 
     gpios.startReading();
@@ -51,7 +52,7 @@ function startMuzzley(){
         if (err) return console.log("[error]", "changeWidget", err );
 
         participant.on('signalingMessage', function(type, message, cb) {
-console.log("Received", message);
+   //console.log("Received", message);
          if(type === "webview-ready"){
            var pins = gpios.getPins();
            participant.sendSignal('pinValues', pins);
@@ -133,9 +134,11 @@ process.on('SIGINT', function() {
   console.log("Shutting down..");
   console.log("Unexporting pins..");
   console.log("Shutting leds down..\n");
-  gpios.stopReadingGpios();
   ledStripe.lightsOff();
-  gpios.unexportAll(function(){
-    process.exit();
-  });
+  setTimeout(function () {
+    gpios.stopReadingGpios();
+    gpios.unexportAll(function(){
+      process.exit();
+    });
+  }, 1500);
 });
