@@ -22,6 +22,7 @@
     "muzzley-client": "*",
     "async": "*",
     "lpd8806-async": "*",
-    "color": "*"
+    "color": "*",
+    "qrcode-terminal": "^0.9.5"
   }
 }
