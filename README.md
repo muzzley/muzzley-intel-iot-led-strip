@@ -19,11 +19,11 @@ To run:
 
 ### Project description
 
-Control a led strip with your mobile device (iOS and Android) using an [Intel® Galileo Board](http://arduino.cc/en/ArduinoCertified/IntelGalileo)
+Control a led strip with your mobile device (iOS and Android) using the Intel® boards: Galileo, Galileo Gen2 and Edison.
 
-This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Galileo signaling and mobile views development.
+This demos use [Muzzley](http://www.muzzley.com) for the Mobile <-> Intel boards signaling and mobile views development.
 
-To try the demo you can git clone this repository or download the ready to run app package (links at the botttom of the page). This demo runs with the Intel® IoT Devkit 1.0 image with Nodejs.
+To try the demo you can git clone this repository or download the ready to run app package (links at the botttom of the page). This demo runs with the Intel® IoT Devkit image which supports Nodejs.
 
 ### About the demos
 
@@ -49,10 +49,10 @@ Two demos are available:
 ### Hardware Requirements
 
 In order to run those demos it's required:
-  - Intel Galileo Board
-  - Micro SD card
+  - Intel Galileo / Intel Galileo Gen2 / Intel Edison
+  - Micro SD card (Galileo boards only)
   - Digital RGB Led Strip
-  - External power supply for the led strip (If the ledstrip is long and require more amps)
+  - External power supply for the led strip (If the ledstrip is long and require more amperes)
 
 [Wiring diagram 1](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/wiring_diagram.png)
 
@@ -62,7 +62,7 @@ In order to run those demos it's required:
 ### Other Requirements
 
 It is also required:
-  - Intel® IoT Devkit1.0 image in the SD card
+  - Latest Intel® IoT Devkit image in the SD card (Galileo boards only)
   - Muzzley account
 
 
@@ -73,7 +73,7 @@ Download the Installation/usage guide here:
 [Project manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/manual_v1.3.pdf)
 
 
-### Image File
+### Image File (Galileo 1)
 
 If you already have the [IoT Devkit](http://software.intel.com/en-us/iotdevkit) or other image, a ready to run app with all the dependencies is availble for download [here](http://cdn.muzzley.com/intel/MuzzleyGalileoDemos_Devkit1.0.tar.gz)
 
