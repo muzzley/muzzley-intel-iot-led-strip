@@ -10,12 +10,14 @@ The ledstrip demo is now supported on the following boards:
 
 
 To run:
-  - Git clone this project
+  - Git clone this project (in Edison it is required to install the git package, type `wget http://iotdk.intel.com/repos/1.1/iotdk/i586/git_1.9.0-r0_i586.ipk` then `opkg install git_1.9.0-r0_i586.ipk`)
   - Adjust the system datetime if required `date -s "16 OCT 2014 12:00:00"`
   - Run `npm install` in the project folder
   - Edit `config.js` file, select the board, insert your Muzzley app key
   - Run `node index.js` to start
   - Scan the qrcode or enter the activity id that appears in the console using your Muzzley phone/tablet app
+
+
 
 
 ### Project description
