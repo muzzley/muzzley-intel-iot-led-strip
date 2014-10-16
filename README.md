@@ -11,6 +11,7 @@ The ledstrip demo is now supported on the following boards:
 
 To run:
   - Git clone this project
+  - Adjust the system datetime if required `date -s "16 OCT 2014 12:00:00"`
   - Run `npm install` in the project folder
   - Edit `config.js` file, select the board, insert your Muzzley app key
   - Run `node index.js` to start
