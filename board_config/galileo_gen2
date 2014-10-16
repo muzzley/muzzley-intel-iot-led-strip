@@ -1,30 +1,38 @@
 #!/bin/bash -e
+# v0od0ochild
+
+echo "Configuring Spidev1.0 for Galileo-Gen2.."
 
 #pin10
-export gpio26
-export gpio74
-#echo "out" > /sys/class/gpio/gpio26/direction
-#echo "0" > /sys/class/gpio/gpio26/value
-#echo "0" > /sys/class/gpio/gpio74/value
+echo 26 > /sys/class/gpio/export || echo "gpio26 already exported"
+echo 74 > /sys/class/gpio/export || echo "gpio74 already exported"
+echo 27 > /sys/class/gpio/export || echo "gpio27 already exported"
+echo low > /sys/class/gpio/gpio26/direction || echo "Failed to set gpio26 low"
+echo low > /sys/class/gpio/gpio74/direction || echo "Failed to set gpio74 low"
+echo in > /sys/class/gpio/gpio27/direction || echo "Failed to set gpio27 direction in"
 
 #pin11
-export gpio24
-export gpio44
-export gpio72
-#echo "out" > /sys/class/gpio/gpio24/direction
-#echo "0" > /sys/class/gpio/gpio24/value
-echo "out" > /sys/class/gpio/gpio44/direction
-echo "1" > /sys/class/gpio/gpio44/value
-echo "0" > /sys/class/gpio/gpio72/value
+echo 24 > /sys/class/gpio/export || echo "gpio24 already exported"
+echo 44 > /sys/class/gpio/export || echo "gpio44 already exported"
+echo 72 > /sys/class/gpio/export || echo "gpio72 already exported"
+echo 25 > /sys/class/gpio/export || echo "gpio25 already exported"
+echo low > /sys/class/gpio/gpio24/direction || echo "Failed to set gpio24 low"
+echo high > /sys/class/gpio/gpio44/direction || echo "Failed to set gpio44 high"
+echo low > /sys/class/gpio/gpio72/direction || echo "Failed to set gpio72 low"
+echo in > /sys/class/gpio/gpio25/direction || echo "Failed to set gpio25 direction in"
 
 #pin12
-export gpio42
-echo "0" > /sys/class/gpio/gpio42/value
+echo 42 > /sys/class/gpio/export || echo "gpio42 already exported"
+echo 43 > /sys/class/gpio/export || echo "gpio43 already exported"
+echo low > /sys/class/gpio/gpio42/direction || echo "Failed to set gpio42 low"
+echo in > /sys/class/gpio/gpio43/direction || echo "Failed to set gpio43 direction in"
 
 #pin13
-export gpio30
-export gpio46
-echo "0" > /sys/class/gpio/gpio30/value
-echo "out" > /sys/class/gpio/gpio46/direction
-echo "1" > /sys/class/gpio/gpio46/value
-echo "done..."
+echo 30 > /sys/class/gpio/export || echo "gpio30 alreay exported"
+echo 46 > /sys/class/gpio/export || echo "gpio46 already exported"
+echo 31 > /sys/class/gpio/export || echo "gpio31 already exported"
+echo low > /sys/class/gpio/gpio30/direction || "Failed to set gpio30 low"
+echo high > /sys/class/gpio/gpio46/direction || "Failed to set gpio46 high"
+echo in > /sys/class/gpio/gpio31/direction || "Failed to set gpio31 direction in"
+echo "Spi ready"
+

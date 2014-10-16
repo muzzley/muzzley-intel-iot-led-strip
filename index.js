@@ -11,9 +11,7 @@ var participants = {};
 
 gpios.exportAll(function(){
   exec(config.board.setup, function(err,stdout,stderr){
-    console.log(err);
     console.log(stdout);
-    console.log(stderr);
     startMuzzley();
   });
 });

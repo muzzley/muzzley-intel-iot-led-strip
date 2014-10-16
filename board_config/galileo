@@ -1,6 +1,8 @@
 #!/bin/bash -e
 # GPIO setup script for SPI1 on Galileo for Linux access
-# Mark Rustad, mark.d.rustad@intel.com
+
+echo "Configuring Spidev1.0 for Galileo.."
+
 gpio_path=/sys/class/gpio
 gpio4="out 1"
 gpio42="out 0 strong"
@@ -28,3 +30,4 @@ for i in ${gpios}; do
   setup_gpio ${gpio} ${!gpiovar}
   fi
 done
+echo "Spi ready"

@@ -1,43 +1,46 @@
 #!/bin/sh
 
-echo 111 > /sys/class/gpio/export
-echo 115 > /sys/class/gpio/export
-echo 114 > /sys/class/gpio/export
-echo 109 > /sys/class/gpio/export
-echo 263 > /sys/class/gpio/export
-echo 240 > /sys/class/gpio/export
-echo 262 > /sys/class/gpio/export
-echo 241 > /sys/class/gpio/export
-echo 242 > /sys/class/gpio/export
-echo 243 > /sys/class/gpio/export
-echo 258 > /sys/class/gpio/export
-echo 259 > /sys/class/gpio/export
-echo 260 > /sys/class/gpio/export
-echo 261 > /sys/class/gpio/export
-echo 226 > /sys/class/gpio/export
-echo 227 > /sys/class/gpio/export
-echo 228 > /sys/class/gpio/export
-echo 229 > /sys/class/gpio/export
-echo 214 > /sys/class/gpio/export
-echo "Pins exported.."
-echo "low" > /sys/class/gpio/gpio214/direction
-echo "high" > /sys/class/gpio/gpio263/direction
-echo "high" > /sys/class/gpio/gpio240/direction
-echo "high" > /sys/class/gpio/gpio262/direction
-echo "high" > /sys/class/gpio/gpio241/direction
-echo "high" > /sys/class/gpio/gpio242/direction
-echo "high" > /sys/class/gpio/gpio243/direction
-echo "high" > /sys/class/gpio/gpio258/direction
-echo "high" > /sys/class/gpio/gpio259/direction
-echo "low" > /sys/class/gpio/gpio260/direction
-echo "high" > /sys/class/gpio/gpio261/direction
-echo "in" > /sys/class/gpio/gpio226/direction
-echo "in" > /sys/class/gpio/gpio227/direction
-echo "in" > /sys/class/gpio/gpio228/direction
-echo "in" > /sys/class/gpio/gpio229/direction
-echo "mode1" > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux
-echo "mode1" > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux
-echo "mode1" > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux
-echo "mode1" > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux
-echo "high" > /sys/class/gpio/gpio214/direction
-echo "done.."
+echo "Configuring Spidev5.1 for Edison.."
+
+echo 111 > /sys/class/gpio/export || "gpio111 already exported"
+echo 115 > /sys/class/gpio/export || "gpio115 already exported"
+echo 114 > /sys/class/gpio/export || "gpio114 already exported"
+echo 109 > /sys/class/gpio/export || "gpio109 already exported"
+echo 263 > /sys/class/gpio/export || "gpio263 already exported"
+echo 240 > /sys/class/gpio/export || "gpio240 already exported"
+echo 262 > /sys/class/gpio/export || "gpio262 already exported"
+echo 241 > /sys/class/gpio/export || "gpio241 already exported"
+echo 242 > /sys/class/gpio/export || "gpio242 already exported"
+echo 243 > /sys/class/gpio/export || "gpio243 already exported"
+echo 258 > /sys/class/gpio/export || "gpio258 already exported"
+echo 259 > /sys/class/gpio/export || "gpio259 already exported"
+echo 260 > /sys/class/gpio/export || "gpio260 already exported"
+echo 261 > /sys/class/gpio/export || "gpio261 already exported"
+echo 226 > /sys/class/gpio/export || "gpio226 already exported"
+echo 227 > /sys/class/gpio/export || "gpio227 already exported"
+echo 228 > /sys/class/gpio/export || "gpio228 already exported"
+echo 229 > /sys/class/gpio/export || "gpio229 already exported"
+echo 214 > /sys/class/gpio/export || "gpio214 already exported"
+
+echo "low" > /sys/class/gpio/gpio214/direction || "Failed to set gpio214 low"
+echo "high" > /sys/class/gpio/gpio263/direction || "Failed to set gpio263 high"
+echo "high" > /sys/class/gpio/gpio240/direction || "Failed to set gpio240 high"
+echo "high" > /sys/class/gpio/gpio262/direction || "Failed to set gpio62 high"
+echo "high" > /sys/class/gpio/gpio241/direction || "Failed to set gpio241 high"
+echo "high" > /sys/class/gpio/gpio242/direction || "Failed to set gpio242 high"
+echo "high" > /sys/class/gpio/gpio243/direction || "Failed to set gpio243 high"
+echo "high" > /sys/class/gpio/gpio258/direction || "Failed to set gpio258 high"
+echo "high" > /sys/class/gpio/gpio259/direction || "Failed to set gpio259 high"
+echo "low" > /sys/class/gpio/gpio260/direction || "Failed to set gpio260 low"
+echo "high" > /sys/class/gpio/gpio261/direction || "Failed to set gpio261 high"
+echo "in" > /sys/class/gpio/gpio226/direction || "Failed to set gpio226 direction in"
+echo "in" > /sys/class/gpio/gpio227/direction || "Failed to set gpio227 direction in"
+echo "in" > /sys/class/gpio/gpio228/direction || "Failed to set gpio228 direction in"
+echo "in" > /sys/class/gpio/gpio229/direction || "Failed to set gpio229 direction in"
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio111/current_pinmux || "Failed to set gpio111 to mode1"
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio115/current_pinmux || "Failed to set gpio115 to mode1"
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio114/current_pinmux || "Failed to set gpio114 to mode1"
+echo "mode1" > /sys/kernel/debug/gpio_debug/gpio109/current_pinmux || "Failed to set gpio109 to mode1"
+echo "high" > /sys/class/gpio/gpio214/direction || "Failed to set gpio214 high"
+echo "Spi ready"
+
