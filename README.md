@@ -8,8 +8,8 @@ The ledstrip demo is now supported on the following boards:
   - Intel® Galileo Gen2
   - Intel® Edison
 
-If using Edison, it i required to install the git package:
-  - Ensure that you have enabled and established Wi-Fi connection on Edison - explained here.
+If using Edison, it is required to install the git package:
+  - Ensure that you have [enabled and established Wi-Fi connection on Edison](https://communities.intel.com/docs/DOC-23147#jive_content_id_Step_5__Connect_Edison_to_WiFi)
   - Run command: wget http://iotdk.intel.com/repos/1.1/iotdk/i586/git_1.9.0-r0_i586.ipk
   - Then run: opkg install git_1.9.0-r0_i586.ipk
 
