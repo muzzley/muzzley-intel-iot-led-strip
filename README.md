@@ -13,6 +13,10 @@ If using Edison, it is required to install the git package:
   - Run command: wget http://iotdk.intel.com/repos/1.1/iotdk/i586/git_1.9.0-r0_i586.ipk
   - Then run: opkg install git_1.9.0-r0_i586.ipk
 
+If using a Galileo board:
+  - [Download the latest IoT Devkit image](https://software.intel.com/sites/landingpage/iotdk/board-boot-image.html)
+  - Install it in your sd card
+
 To run:
   - Clone this project using `git clone https://github.com/muzzley/muzzley-intel-iot-led-strip.git`
   - Check if the board date is updated with the command `date`, if required, adjust it with the command `date -s "16 OCT 2014 12:00:00"`
