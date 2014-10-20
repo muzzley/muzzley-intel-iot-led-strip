@@ -8,14 +8,20 @@ The ledstrip demo is now supported on the following boards:
   - Intel® Galileo Gen2
   - Intel® Edison
 
+If using Edison, it i required to install the git package:
+  - Ensure that you have enabled and established Wi-Fi connection on Edison - explained here.
+  - Run command: wget http://iotdk.intel.com/repos/1.1/iotdk/i586/git_1.9.0-r0_i586.ipk
+  - Then run: opkg install git_1.9.0-r0_i586.ipk
 
 To run:
-  - Git clone this project (in Edison it is required to install the git package, type `wget http://iotdk.intel.com/repos/1.1/iotdk/i586/git_1.9.0-r0_i586.ipk` then `opkg install git_1.9.0-r0_i586.ipk`)
-  - Adjust the system datetime if required `date -s "16 OCT 2014 12:00:00"`
-  - Run `npm install` in the project folder
-  - Edit `config.js` file, select the board, insert your Muzzley app key
-  - Run `node index.js` to start
-  - Scan the qrcode or enter the activity id that appears in the console using your Muzzley phone/tablet app
+  - Clone this project using `git clone https://github.com/muzzley/muzzley-intel-iot-led-strip.git`
+  - Check if the board date is updated with the command `date`, if required, adjust it with the command `date -s "16 OCT 2014 12:00:00"`
+  - Enter the project folder and run `npm install`
+  - Edit `config.js` file:
+      - Select the current board from the options: *boards.GALILEO*, *boards.GALILEO_GEN2* or *boards.EDISON*
+      - Insert the Muzzley App token, you can get one in www.muzzley.com  > apps > create new app
+  - To start the app run `node index.js`
+  - The application QR code and the Activity ID will appear on the console. Scan QR code or insert ID in a mobile device using the Muzzley app
 
 
 
