@@ -83,7 +83,7 @@ It is also required:
 
 Download the Installation/usage guide here:
 
-[Project manual](https://raw.github.com/v0od0oChild/MuzzleyGalileoDemos/master/docs/manual_v1.3.pdf)
+[Project manual](https://github.com/muzzley/muzzley-intel-iot-led-strip/blob/master/docs/manual_v1.3.pdf?raw=true)
 
 
 ### Image File (Galileo 1)
